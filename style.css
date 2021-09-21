@@ -1,5 +1,10 @@
 body {
-    background-color: powderblue;
+    background-color: rgba(3, 11, 12, 0.404);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: x-large;
   }
 
 .neutral{
@@ -14,47 +19,78 @@ body {
     color: red;
 }
 
+div {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 5%;
+}
 
+#input-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  width: 75%;
+}
 
+textarea{
+  height: 75px;
+  justify-self:flex-end;
+}
+
+p{
+  height: 2000px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+img{
+  align-self: center;
+  width: 50%;
+  height: 100%;
+}
 
 .container{
-    height: 5px;
-    width: 35px;
-    display: flex;
-    position: relative;
+  align-self: center;
+  height: 15px;
+  width: 105px;
+  display: flex;
+  position: relative;
 }
-    .circle{
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background-color: #fff;
-      animation: move 500ms linear 0ms infinite;
-      margin-right: 10px;
-    }
-      .circle:first-child{
-        position: absolute;
-        top:0;
-        left:0;
-        animation: grow 500ms linear 0ms infinite;
-      }
-      
-      .circle:last-child{
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-right: 0;
-        animation: grow 500ms linear 0s infinite reverse;
-      }
-    
+.circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(238, 237, 237);
+  animation: move 500ms linear 0ms infinite;
+  margin-right: 30px;
+}
+.circle:first-child{
+  position: absolute;
+  top:0;
+  left:0;
+  animation: grow 500ms linear 0ms infinite;
+}
   
+.circle:last-child{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0;
+  animation: grow 500ms linear 0s infinite reverse;
+}
   
-  @keyframes grow {
-    from {transform: scale(0,0); opacity: 0;}
-    to {transform: scale(1,1); opacity: 1;}
-  }
-  
-  @keyframes move {
-    from {transform: translateX(0px)}
-    to {transform: translateX(15px)}
-  }
 
+
+@keyframes grow {
+  from {transform: scale(0,0); opacity: 0;}
+  to {transform: scale(1,1); opacity: 1;}
+}
+
+@keyframes move {
+  from {transform: translateX(0px)}
+  to {transform: translateX(45px)}
+}
